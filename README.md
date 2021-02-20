@@ -1,1 +1,1 @@
-# static-comp
+# Mamminals
