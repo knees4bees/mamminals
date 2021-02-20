@@ -1,7 +1,77 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  /* TODO figure out why this makes everything messed up */
+  /* min-width: 360px; */
+}
+
+/********** Nav **********/
+nav {
+  background-color: #462255;
+  color: #F2F4F3;
+  padding: 0 10px;
+  /* min-width: 360px; */
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-item {
+  padding-left: 8px;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  min-width: 30vw;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-text {
+  padding: 0 8px;
+}
+
+.dog,
+.horse {
+  color: #706F6F;
+}
+
+.fa-dog,
+.fa-horse {
+  color: #FC7753;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
 }
 
 .logo-text {
   font-family: 'Bangers', cursive;
+  padding-right: 0.5rem;
+}
+
+/********** Main **********/
+
+main {
+  /* min-width: 360px; */
 }
