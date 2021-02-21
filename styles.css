@@ -1,0 +1,304 @@
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #534D41;
+  /* TODO figure out why this makes everything messed up */
+  /* min-width: 360px; */
+}
+
+
+/********** Nav **********/
+nav {
+  margin: 0;
+  background-color: #462255;
+  color: #F2F4F3;
+  padding: 10px 30px 20px 30px;
+  /* TODO figure out why this isn't helpful */
+  /* min-width: 360px; */
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-item {
+  padding-left: 8px;
+}
+
+.fa-user,
+.fa-caret-down {
+  font-size: 1.5rem;
+}
+
+.fa-user {
+  color: #FCBAA8;
+}
+
+.fa-caret-down,
+.user-name {
+  color: #FC7753;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  width: 30vw;
+  min-width: 100px;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-text {
+  padding: 0 10px;
+}
+
+.cat {
+  color: #F2F4F3;
+}
+
+.dog,
+.horse {
+  color: #FCBAA8;
+}
+
+.fa-cat {
+  color: #F2F4F3;
+}
+
+.fa-dog,
+.fa-horse {
+  color: #FC7753;
+}
+
+.hamburger {
+  color: #F2F4F3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.logo-text {
+  margin: 0;
+  font-family: 'Bangers', cursive;
+  color: #F2F4F3;
+  padding-right: 0.75rem;
+  /* TODO figure out how to right-align logo stuff so it stays there */
+  /* (this could be moot if I can get the hamburger to show up) */
+  text-align: right;
+  min-width: 100px;
+}
+
+.fa-exclamation {
+  font-size: 3rem;
+  color: #F2F4F3;
+}
+
+/********** Main **********/
+main {
+  padding: 20px;
+  background-color: #F2F4F3;
+}
+
+.main-heading {
+  margin: 0;
+  padding: 20px 0px 30px 0px;
+  font-size: 3rem;
+}
+
+
+/********** Cards/Grid **********/
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12px;
+}
+
+.card {
+  box-shadow: 0px 0px 7px #706F6F;
+  /* TODO adjust these min size values */
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 400px;
+}
+
+.card-top {
+  min-height: 175px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-arrow-alt-circle-right {
+  margin: 10px;
+  font-size: 3rem;
+  color: #FCBAA8;
+}
+
+.view-count {
+  margin-top: 15px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.view-text {
+  font-size: 0.8rem;
+  color: #F2F4F3;
+}
+
+.view-number {
+  font-size: 2rem;
+  color: #F2F4F3;
+}
+
+.tiger {
+  background-image: url(./assets/tiger.jpg);
+}
+
+.lion {
+  background-image: url(./assets/lion.jpg);
+}
+
+.domestic-cat {
+  background-image: url(./assets/domestic-cat.jpg);
+}
+
+.jaguar {
+  background-image: url(./assets/jaguar.jpg);
+}
+
+.cougar {
+  background-image: url(./assets/cougar.jpg);
+}
+
+.lynx {
+  background-image: url(./assets/lynx.jpg);
+}
+
+.leopard {
+  background-image: url(./assets/leopard.jpg);
+}
+
+.cheetah {
+  background-image: url(./assets/cheetah.jpg);
+}
+
+.card-bottom {
+  padding: 15px;
+}
+
+.common-name {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.latin-name {
+  font-size: 0.8rem;
+  color: #706F6F;
+}
+
+.website {
+  margin: 20px 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  background-color: #FCBAA8;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+.fun-fact-text {
+  font-size: 1.15rem;
+}
+
+.region {
+  margin-top: 15px;
+}
+
+.region-number {
+  font-size: 2rem;
+  color: #FC7753;
+}
+
+
+/********** Media Queries **********/
+
+/* TODO check/set breakpoints for media queries */
+/* TODO check each component of these media queries: what I want?*/
+@media screen and (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .top-row,
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .top-row,
+  .menu {
+    display: none;
+  }
+}
+
+/* TODO either figure out how to unhide bars in media queries above */
+/* or get this one to work */
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+
+/********** Hiding **********/
+.hidden {
+  display: none;
+}
