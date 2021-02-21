@@ -1,14 +1,24 @@
-* {
+*,
+h1,
+h2 {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
   /* TODO figure out why this makes everything messed up */
   /* min-width: 360px; */
 }
 
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /********** Nav **********/
 nav {
+  margin: 0;
   background-color: #462255;
   color: #F2F4F3;
-  padding: 10px 30px 40px 30px;
+  padding: 10px 30px 20px 30px;
+  /* TODO figure out why this isn't helpful */
   /* min-width: 360px; */
 }
 
@@ -32,7 +42,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .menu {
@@ -40,9 +50,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  min-width: 30vw;
+  width: 30vw;
+  mid-width: 100px;
   align-items: center;
   font-size: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .menu-item {
@@ -51,7 +63,7 @@ nav {
 }
 
 .menu-text {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .dog,
@@ -67,16 +79,28 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: 20px;
 }
 
 .logo-text {
   font-family: 'Bangers', cursive;
-  padding-right: 0.5rem;
+  padding-right: 0.75rem;
+  text-align: end;
+  mid-width: 100px;
+}
+
+.fa-exclamation {
+  font-size: 3rem;
 }
 
 /********** Main **********/
-
 main {
   /* min-width: 360px; */
+}
+
+
+/********** Helpers **********/
+.hidden {
+  display: none;
 }
