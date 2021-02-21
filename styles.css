@@ -155,9 +155,24 @@ main {
 
 .fa-arrow-alt-circle-right {
   margin: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #FCBAA8;
+}
 
+.view-count {
+  margin-top: 15px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.view-text {
+  font-size: 0.8rem;
+  color: #F2F4F3;
+}
+
+.view-number {
+  font-size: 2rem;
+  color: #F2F4F3;
 }
 
 .tiger {
