@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #534D41;
   /* TODO figure out why this makes everything messed up */
   /* min-width: 360px; */
 }
@@ -32,6 +33,15 @@ nav {
   font-size: 1.5rem;
 }
 
+.fa-user {
+  color: #706F6F;
+}
+
+.fa-caret-down,
+.user-name {
+  color: #FC7753;
+}
+
 .bottom-row {
   display: flex;
   flex-direction: row;
@@ -45,7 +55,7 @@ nav {
   justify-content: space-between;
   text-align: center;
   width: 30vw;
-  mid-width: 100px;
+  min-width: 100px;
   align-items: center;
   font-size: 1.25rem;
   margin-bottom: 20px;
@@ -60,9 +70,17 @@ nav {
   padding: 0 10px;
 }
 
+.cat {
+  color: white;
+}
+
 .dog,
 .horse {
   color: #706F6F;
+}
+
+.fa-cat {
+  color: white;
 }
 
 .fa-dog,
@@ -80,13 +98,15 @@ nav {
 .logo-text {
   margin: 0;
   font-family: 'Bangers', cursive;
+  color: white;
   padding-right: 0.75rem;
   text-align: end;
-  mid-width: 100px;
+  min-width: 100px;
 }
 
 .fa-exclamation {
   font-size: 3rem;
+  color: white;
 }
 
 /********** Main **********/
