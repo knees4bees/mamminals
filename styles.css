@@ -88,6 +88,10 @@ nav {
   color: #FC7753;
 }
 
+.hamburger {
+  color: #F2F4F3;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -100,7 +104,9 @@ nav {
   font-family: 'Bangers', cursive;
   color: #F2F4F3;
   padding-right: 0.75rem;
-  text-align: end;
+  /* TODO figure out how to right-align logo stuff so it stays there */
+  /* (this could be moot if I can get the hamburger to show up) */
+  text-align: right;
   min-width: 100px;
 }
 
@@ -200,6 +206,7 @@ main {
 /********** Media Queries **********/
 
 /* TODO check/set breakpoints for media queries */
+/* TODO check each component of these media queries: what I want?*/
 @media screen and (max-width: 900px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
@@ -212,12 +219,38 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .top-row,
+  .menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 415px) {
   .card-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .top-row,
+  .menu {
+    display: none;
+  }
+}
+
+/* TODO either figure out how to unhide bars in media queries above */
+/* or get this one to work */
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
   }
 }
 
