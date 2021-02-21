@@ -104,9 +104,70 @@ main {
 /********** Cards/Grid **********/
 .card-container {
   display: grid;
-  /* height: 80vh; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  /* TODO finish setting up this drop shadow */
+  box-shadow: #706F6F;
+  /* TODO adjust these min size values */
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 400px;
+}
+
+.card-top {
+  min-height: 175px;
+}
+
+.tiger {
+  background-image: url(./assets/tiger.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lion {
+  background-image: url(./assets/lion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.domestic-cat {
+  background-image: url(./assets/domestic-cat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jaguar {
+  background-image: url(./assets/jaguar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cougar {
+  background-image: url(./assets/cougar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lynx {
+  background-image: url(./assets/lynx.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.leopard {
+  background-image: url(./assets/leopard.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cheetah {
+  background-image: url(./assets/cheetah.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 
