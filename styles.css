@@ -5,6 +5,7 @@
   /* min-width: 360px; */
 }
 
+
 /********** Nav **********/
 nav {
   margin: 0;
@@ -100,7 +101,41 @@ main {
 }
 
 
-/********** Helpers **********/
+/********** Cards/Grid **********/
+.card-container {
+  display: grid;
+  /* height: 80vh; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+/********** Media Queries **********/
+
+/* TODO check/set breakpoints for media queries */
+@media screen and (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+
+/********** Hiding **********/
 .hidden {
   display: none;
 }
