@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -148,6 +149,15 @@ main {
   min-height: 175px;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-arrow-alt-circle-right {
+  margin: 10px;
+  font-size: 2rem;
+  color: #FCBAA8;
+
 }
 
 .tiger {
