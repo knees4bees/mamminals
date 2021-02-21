@@ -140,54 +140,40 @@ main {
 
 .card-top {
   min-height: 175px;
+  background-size: cover;
+  background-position: center;
 }
 
 .tiger {
   background-image: url(./assets/tiger.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lion {
   background-image: url(./assets/lion.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .domestic-cat {
   background-image: url(./assets/domestic-cat.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .jaguar {
   background-image: url(./assets/jaguar.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .cougar {
   background-image: url(./assets/cougar.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lynx {
   background-image: url(./assets/lynx.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .leopard {
   background-image: url(./assets/leopard.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .cheetah {
   background-image: url(./assets/cheetah.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 
