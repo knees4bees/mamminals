@@ -118,6 +118,7 @@ nav {
 /********** Main **********/
 main {
   padding: 20px;
+  background-color: #F2F4F3;
 }
 
 .main-heading {
@@ -132,12 +133,11 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 12px;
 }
 
 .card {
-  /* TODO finish setting up this drop shadow */
-  box-shadow: #706F6F;
+  box-shadow: 0px 0px 7px #706F6F;
   /* TODO adjust these min size values */
   min-width: 300px;
   max-width: 400px;
@@ -197,9 +197,27 @@ main {
 }
 
 .website {
-  margin: 10px;
+  margin: 20px 10px;
+  padding: 10px;
   font-size: 0.8rem;
   background-color: #FCBAA8;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+.fun-fact-text {
+  font-size: 1.15rem;
+}
+
+.region {
+  margin-top: 15px;
+}
+
+.region-number {
+  font-size: 2rem;
+  color: #FC7753;
 }
 
 
