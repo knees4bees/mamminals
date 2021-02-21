@@ -3,8 +3,17 @@
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: #534D41;
-  /* TODO figure out why this makes everything messed up */
-  /* min-width: 360px; */
+}
+
+.big-wrapper {
+  margin: 0 auto;
+  min-width: 340px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  background-color: #F2F4F3;
 }
 
 
@@ -14,8 +23,6 @@ nav {
   background-color: #462255;
   color: #F2F4F3;
   padding: 10px 30px 20px 30px;
-  /* TODO figure out why this isn't helpful */
-  /* min-width: 360px; */
 }
 
 .top-row {
@@ -52,14 +59,16 @@ nav {
 
 .menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  width: 30vw;
-  min-width: 100px;
-  align-items: center;
   font-size: 1.25rem;
   margin-bottom: 20px;
+}
+
+.hamburger {
+  margin-right: 20px;
+}
+
+.fa-bars {
+  color: #F2F4F3;
 }
 
 .menu-item {
@@ -68,7 +77,7 @@ nav {
 }
 
 .menu-text {
-  padding: 0 10px;
+  padding: 0 20px 0 10px;
 }
 
 .cat {
@@ -89,10 +98,6 @@ nav {
   color: #FC7753;
 }
 
-.hamburger {
-  color: #F2F4F3;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -105,16 +110,13 @@ nav {
   font-family: 'Bangers', cursive;
   color: #F2F4F3;
   padding-right: 0.75rem;
-  /* TODO figure out how to right-align logo stuff so it stays there */
-  /* (this could be moot if I can get the hamburger to show up) */
-  text-align: right;
-  min-width: 100px;
 }
 
 .fa-exclamation {
   font-size: 3rem;
   color: #F2F4F3;
 }
+
 
 /********** Main **********/
 main {
@@ -139,9 +141,7 @@ main {
 
 .card {
   box-shadow: 0px 0px 7px #706F6F;
-  /* TODO adjust these min size values */
-  min-width: 300px;
-  max-width: 400px;
+  width: 300px;
   min-height: 400px;
 }
 
@@ -248,16 +248,14 @@ main {
 
 /********** Media Queries **********/
 
-/* TODO check/set breakpoints for media queries */
-/* TODO check each component of these media queries: what I want?*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1275px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -267,13 +265,20 @@ main {
     font-size: 1.5rem;
   }
 
-  .top-row,
-  .menu {
+  .logo-text {
+    padding-right: 0.5rem;
+  }
+
+  .fa-exclamation {
+    font-size: 2.5rem;
+  }
+
+  .top-row {
     display: none;
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 640px) {
   .card-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
@@ -283,22 +288,18 @@ main {
     font-size: 1.25rem;
   }
 
+  .fa-exclamation {
+    font-size: 2rem;
+  }
+
   .top-row,
-  .menu {
+  .menu-item {
     display: none;
   }
 }
 
-/* TODO either figure out how to unhide bars in media queries above */
-/* or get this one to work */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 951px) {
   .hamburger {
     display: none;
   }
-}
-
-
-/********** Hiding **********/
-.hidden {
-  display: none;
 }
